@@ -1,0 +1,57 @@
+
+/*
+	Style Sheet
+    Author: Alexander MacConnell
+    Date: 2/7/2024
+    Filename: syle.html
+*/
+
+html /* html page */
+{
+    background-image: linear-gradient(to bottom right, rgb(239, 239, 11), red);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+body /* body and its content */
+{
+	position: relative; 
+	font-family: "Lato", sans-serif;
+	color:#ffffff;
+	margin: 0;
+}
+
+ul 
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: center;
+}
+
+li
+{
+	float: left;
+}
+  
+li a
+{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: x-large;
+}
+  
+li a:hover
+{
+	background-color: #111;
+}

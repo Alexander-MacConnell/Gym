@@ -55,3 +55,15 @@ li a:hover
 {
 	background-color: #111;
 }
+
+@media screen and (max-aspect-ratio: 15/16) 
+{
+    li a
+	{
+        font-size: 6vw;
+		padding: 14px 20px;
+		border: 2px outset rgb(30, 30, 30);
+		border-radius: 4vw;
+		margin: 0.8vw;
+    }
+}

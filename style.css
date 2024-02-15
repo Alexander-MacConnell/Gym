@@ -6,28 +6,31 @@
     Filename: syle.html
 */
 
-html /* html page */
-{
+html {
     background-image: linear-gradient(to bottom right, rgb(239, 239, 11), red);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 
-body /* body and its content */
-{
+body {/* body and its content */
 	position: relative; 
 	font-family: "Lato", sans-serif;
 	color:#ffffff;
 	margin: 0;
+	font-size: 20px;
 }
 
-ul 
-{
+h1 {
+	text-align: center;
+	font-size: 50px;
+}
+
+ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+	min-height: 46px;
 	background-color: #333;
 	position: -webkit-sticky; /* Safari */
 	position: sticky;
@@ -36,40 +39,95 @@ ul
 	justify-content: center;
 }
 
-li
-{
+li {
 	float: left;
 }
   
-li a
-{
-	display: block;
+li a {
+	display: inline-block;
 	color: white;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	font-size: x-large;
 }
   
-li a:hover
-{
-	background-color: #111;
+li a:hover {
+	background-color: black;
+}
+  
+.dropData {
+	display: none;
+	position: absolute;
+	background-color: #333;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	min-width: 130px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+  
+.dropData a {
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+  
+.drop:hover .dropData {
+	display: block;
+}
+
+h1 {
+	font-size: 40px;
+	margin-top: 100px;
+	text-decoration: underline;
+}
+
+#card {
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 30px;
+	background-image: url("heart.jpg");
+	border-radius: 40px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#ctext {
+	color: #000000;
+	font-weight: bold;
+	opacity: 0.0;
+}
+
+#card:hover {
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+
+#card:hover #ctext {
+	opacity: 1;
 }
 
 @media screen and (max-aspect-ratio: 15/16) 
 {
-    li a
-	{
-        font-size: 6vw;
+    li a {
+        font-size: 50px;
 		padding: 14px 20px;
 		border: 2px outset rgb(30, 30, 30);
-		border-radius: 4vw;
-		margin: 0.8vw;
+		border-radius: 40px;
+		margin: 4px;
+		margin-top: 10px;
+		margin-bottom: 10px;
 		-webkit-tap-highlight-color: transparent;
     }
 
-	li a:hover
-	{
+	li a:hover {
 		border: 2px inset rgb(30, 30, 30);
+	}
+
+	ul {
+		min-height: 111px;
 	}
 }

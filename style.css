@@ -49,6 +49,7 @@ li a {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
 }
   
 li a:hover {
@@ -91,7 +92,7 @@ h1 {
 	margin: 30px;
 	background-image: url("heart.jpg");
 	border-radius: 40px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
     background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
@@ -100,10 +101,11 @@ h1 {
 	color: #000000;
 	font-weight: bold;
 	opacity: 0.0;
+	font-size: medium;
 }
 
-#card:hover {
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+#t {
+	margin-top: 0px;
 }
 
 #card:hover #ctext {

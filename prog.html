@@ -31,7 +31,19 @@
     </head>
 
     <body>
-        
+
+	    <script>
+        	var password = "ienjoycheese";
+        	(function passcodeprotect() {
+        		var passcode = prompt("Enter The Secret Code");
+        		while (passcode !== password) {
+        			alert("Incorrect Code");
+        			return passcodeprotect();
+        		}
+		}());
+		
+		alert('Hey the password worked, nice!');
+	</script>
 
 		<ul>
 

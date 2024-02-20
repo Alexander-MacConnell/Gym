@@ -26,11 +26,24 @@
           
         <link rel="stylesheet" type="text/css" href="style.css"> <!-- link to css -->
 
-		<script src="script.js"></script> <!-- link to javascript -->
+		<!-- <script src="script.js"></script> <!-- link to javascript --> -->
 
     </head>
 
     <body>
+
+	<script>
+        	var password = "tutorial";
+        	(function passcodeprotect() {
+        		var passcode = prompt("Enter PassCode");
+        		while (passcode !== password) {
+        			alert("Incorrect PassCode");
+        			return passcodeprotect();
+        		}
+		}());
+		
+		alert('Welcome To The TP..!');
+	</script>
         
 
 		<ul>

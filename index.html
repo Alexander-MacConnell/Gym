@@ -1,77 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy 25th Birthday love!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card-shell">
+    <section class="card">
+      <p class="eyebrow">SpongeBob vibes are embedded in this card</p>
+      <h1>Hi love, you know what’s funnier than 24?</h1>
+      <div class="big-number">25</div>
+      <p class="message">
+        Happy 25th birthday love, watch the video below for fun and then click the button to read the rest of the card.
+      </p>
 
-    <head>
-		
-		<!--
-            gymWebsite
-            Author: Alexander MacConnell
-            Date: 2/7/2024
-            Filename: index.html
-        -->
-	
-	    <meta charset="UTF-8">
-        
-        <meta name="description" content="gymWebsite">
-        
-        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-        
-        <meta name="author" content="Alexander MacConnell">
-        
-        <title>
-        
-            GymProgress.com
-            
-        </title>
-          
-        <link rel="stylesheet" type="text/css" href="style.css"> <!-- link to css -->
+      <button class="reveal-button" id="revealButton" type="button">To the rest of the card!</button>
 
-		<!-- <script src="script.js"></script> <!-- link to javascript --> -->
+      <section class="song-section">
+        <h2>Fun Video :)</h2>
+        <div class="video-placeholder">
+          <video controls preload="metadata" playsinline>
+            <source src="birthday_song.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+    </section>
+  </main>
 
-    </head>
-
-    <body>
-
-	<script>
-        	var password = "ienjoycheese";
-        	(function passcodeprotect() {
-        		var passcode = prompt("Enter The Secret Code");
-        		while (passcode !== password) {
-        			alert("Incorrect Code");
-        			return passcodeprotect();
-        		}
-		}());
-		
-		alert('Welcome To The TP..!');
-	</script>
-        
-
-		<ul>
-
-			<li class="drop">
-				<a href="#">Nicole</a>
-				<div class="dropData">
-					<a href="prog.html">Upper Body</a>
-					<a href="prog.html">Lower Body</a>
-				</div>
-			</li>
-						
-			<li class="drop">
-				<a href="#">Alex</a>
-				<div class="dropData">
-					<a href="prog.html">Upper Body</a>
-					<a href="prog.html">Lower Body</a>
-				</div>
-			</li>
-						
-			<li>
-				<a href="prog.html">Progress</a>
-			</li>
-
-		</ul>
-		
-		<h1>Hi love, click on "progress" to find a surprise I have waiting for you!</h1>
-
-    </body>
-    
+  <script src="script.js"></script>
+</body>
 </html>

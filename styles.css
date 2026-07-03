@@ -187,7 +187,7 @@ h1 {
 .surprise-image-frame {
   width: 100%;
   aspect-ratio: 1 / 1;
-  border-radius: 100px;
+  border-radius: 10%;
   overflow: hidden;
   margin: 18px 0 18px;
   background: linear-gradient(135deg, rgba(255, 216, 77, 0.28), rgba(16, 184, 166, 0.25));
